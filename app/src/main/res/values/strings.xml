@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Strings -->
+    <string name="app_name">Tricholens</string>
+    <string name="back">Back</string>
+    <string name="focus_reticle">Focus reticle</string>
+    <string name="camera_image">Camera image</string>
+    <string name="zoom_06x">0.6x</string>
+    <string name="zoom_1x">1x</string>
+    <string name="zoom_2x">2x</string>
+    <string name="menu">Menu</string>
+    <string name="welcome">Welcome</string>
+    <string name="image">Scalp image</string>
+
+    <!-- Login and Signup -->
+    <string name="login">LOGIN</string>
+    <string name="username_email_phone">Username, Email &amp; Phone number</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+
+    <!-- OTP (Email) -->
+    <string name="mail_illustration">Mail illustration</string>
+    <string name="check_your_mail">Check your mail</string>
+    <string name="otp_sent_message">We just sent an OTP to your registered email address</string>
+    <string name="otp_digit_1">Digit 1</string>
+    <string name="otp_digit_2">Digit 2</string>
+    <string name="otp_digit_3">Digit 3</string>
+    <string name="otp_digit_4">Digit 4</string>
+    <string name="timer_initial_value">01:00</string>
+    <string name="didnt_get_code_resend">Didn\'t get a code? Resend</string>
+
+    <string name="verify_otp">Verify OTP</string>
+
+    <!-- OTP (Phone) -->
+    <string name="phone_illustration">Phone illustration</string>
+    <string name="check_your_phone">Check your phone number</string>
+    <string name="otp_sent_message_phone">We just sent an OTP to your registered phone number</string>
+
+    <!-- Reset Password -->
+    <string name="lock_illustration">Lock illustration</string>
+    <string name="reset_your_password">Reset your password</string>
+    <string name="password_tip">Here\'s a tip: Use a combination of Numbers, Uppercase, lowercase and Special characters</string>
+    <string name="password_hint">Eg: Jamelia@123</string>
+    <string name="reset_password">Reset Password</string>
+
+    <!-- Reset Success -->
+    <string name="reset_success_illustration">Reset Success illustration</string>
+    <string name="reset_successful_title">Reset successful</string>
+    <string name="reset_successful_subtitle">You can now log in to your account</string>
+    <string name="login_now_arrow">Login Now   \u2192</string>
+
+    <!-- Dashboard / Main Page -->
+    <string name="profile_image">Profile image</string>
+    <string name="add_image">Add image</string>
+    <string name="click_to_add_dermoscopic">Click here to add Dermoscopic image</string>
+    <string name="upload">Upload</string>
+    <string name="capture">Capture</string>
+    <string name="history">History</string>
+
+    <!-- Home Menu Popup -->
+    <string name="home">Home</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Log out</string>
+
+
+    <!-- Categories -->
+    <string name="categories">Categories</string>
+
+    <!-- Personal Information page -->
+    <string name="personal_information">Personal Information</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="country">Country/Region</string>
+    <string name="update">Update</string>
+
+    <!-- Search Bar -->
+    <string name="search_history_hint">Search history...</string>
+    <string name="search">Search</string>
+
+
+
+</resources>

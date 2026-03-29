@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadow_grey">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/back"
+            android:contentDescription="@string/back"
+            app:tint="@color/appText" />
+
+        <TextView
+            android:id="@+id/historyTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:textColor="@color/appText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Search Bar -->
+    <!-- Search Bar -->
+    <LinearLayout
+        android:id="@+id/searchBar"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/topBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search_bar_bg"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="2dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/search"
+            android:src="@drawable/search"
+            app:tint="@color/appText" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="309dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:autofillHints="username"
+            android:background="@android:color/transparent"
+            android:hint="Search history..."
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:textColor="@color/appText"
+            android:textColorHint="#9E9E9E"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+
+    <!-- Content List -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/searchBar"
+        android:layout_above="@+id/bottomNavigation"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="28dp">
+
+            <!-- Section Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"/>
+
+            <!-- History Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal"
+                android:background="@drawable/history_item_bg"
+                android:layout_marginBottom="12dp"
+                android:elevation="3dp"
+                android:clipToPadding="false"
+                android:clipToOutline="true"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="14dp">
+
+                    <TextView
+                        android:id="@+id/tvUserName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/appText" />
+
+                    <TextView
+                        android:id="@+id/tvDate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:textColor="@color/appGray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- History Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal"
+                android:background="@drawable/history_item_bg"
+                android:layout_marginBottom="12dp"
+                android:elevation="3dp"
+                android:clipToPadding="false"
+                android:clipToOutline="true"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="14dp">
+
+                    <TextView
+                        android:id="@+id/tvUserName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/appText" />
+
+                    <TextView
+                        android:id="@+id/tvDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:textColor="@color/appGray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- History Item 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal"
+                android:background="@drawable/history_item_bg"
+                android:layout_marginBottom="12dp"
+                android:elevation="3dp"
+                android:clipToPadding="false"
+                android:clipToOutline="true"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="14dp">
+
+                    <TextView
+                        android:id="@+id/tvUserName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/appText" />
+
+                    <TextView
+                        android:id="@+id/tvDate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:textColor="@color/appGray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- History Item 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal"
+                android:background="@drawable/history_item_bg"
+                android:layout_marginBottom="12dp"
+                android:elevation="3dp"
+                android:clipToPadding="false"
+                android:clipToOutline="true"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="14dp">
+
+                    <TextView
+                        android:id="@+id/tvUserName5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/appText" />
+
+                    <TextView
+                        android:id="@+id/tvDate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:textColor="@color/appGray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- History Item 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal"
+                android:background="@drawable/history_item_bg"
+                android:layout_marginBottom="12dp"
+                android:elevation="3dp"
+                android:clipToPadding="false"
+                android:clipToOutline="true"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="14dp">
+
+                    <TextView
+                        android:id="@+id/tvUserName6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/appText" />
+
+                    <TextView
+                        android:id="@+id/tvDate6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="13sp"
+                        android:textColor="@color/appGray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Section Filters -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp"
+                android:gravity="start"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation with soft shadows -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation"
+        android:elevation="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="52dp"
+                android:contentDescription="@string/capture"
+                android:src="@drawable/profile_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="51dp"
+                android:contentDescription="@string/home"
+                android:src="@drawable/theme_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

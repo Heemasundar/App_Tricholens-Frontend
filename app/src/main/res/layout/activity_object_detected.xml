@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="12dp"
+        android:background="@color/appGray">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/appPink"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="@string/back"
+                android:src="@drawable/back"
+                app:tint="@color/appText" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Object Detected"
+                android:textColor="@color/appText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Container for details and image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="3dp"
+            android:padding="16dp"
+            android:clipToOutline="true">
+
+            <!-- Details Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textStyle="bold"
+                android:textColor="@color/appText"
+                android:textSize="20sp"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Details rows -->
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textColor="@color/appText"
+                android:textStyle="normal"
+                android:textSize="17sp"
+                android:layout_marginBottom="2dp"/>
+            <TextView
+                android:id="@+id/densityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confidence : "
+                android:textColor="@color/appText"
+                android:textStyle="normal"
+                android:textSize="17sp"
+                android:layout_marginBottom="2dp"/>
+            <TextView
+                android:id="@+id/conditionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Condition : "
+                android:textColor="@color/appText"
+                android:textStyle="normal"
+                android:textSize="17sp"
+                android:layout_marginBottom="14dp"/>
+
+            <!-- Result image with rounded corners -->
+            <ImageView
+                android:id="@+id/resultImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/scalp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/background__pink"
+                android:contentDescription="@string/image"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+
+        <!-- Observation label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observation:"
+            android:textStyle="bold"
+            android:textColor="@color/appText"
+            android:textSize="20sp"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Observation content (grey background) -->
+        <TextView
+            android:id="@+id/observationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/appGray"
+            android:backgroundTint="@color/appGray"
+            android:backgroundTintMode="src_over"
+            android:padding="12dp"
+            android:text="Based on the analysis, please consult a specialist for further confirmation."
+            android:textColor="@color/appText"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

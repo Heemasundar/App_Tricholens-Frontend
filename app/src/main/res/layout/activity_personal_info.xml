@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/back"
+            android:layout_gravity="start"
+            android:contentDescription="Back"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:textColor="#222222"/>
+
+        <!-- Profile with circular border and camera icon overlay -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Name"
+            android:background="#F2F2F2"
+            android:textSize="16sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:background="#F2F2F2"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile number"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/editMobile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Mobile number"
+            android:background="#F2F2F2"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/editDob"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Date of Birth"
+            android:background="#F2F2F2"
+            android:textSize="16sp"
+            android:inputType="date"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country/Region"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/editCountry"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Country/Region"
+            android:background="#F2F2F2"
+            android:textSize="16sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Save"
+            android:backgroundTint="#F8ACAC"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

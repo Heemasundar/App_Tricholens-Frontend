@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/back"
+                android:contentDescription="Back"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete Profile"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:elevation="4dp"
+            android:padding="24dp">
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="John Doe"
+                android:background="@drawable/bg_input_field"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="12dp"
+                android:textSize="16sp"
+                android:paddingHorizontal="16dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="john@example.com"
+                android:background="@drawable/bg_input_field"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Mobile number -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editMobile"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="+91 9999999999"
+                android:background="@drawable/bg_input_field"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:textSize="16sp"
+                android:inputType="phone"
+                android:paddingHorizontal="16dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Date of Birth -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/editDob"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="YYYY-MM-DD"
+                android:background="@drawable/bg_input_field"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="12dp"
+                android:textSize="16sp"
+                android:inputType="date"
+                android:paddingHorizontal="16dp"
+                android:textColor="#000000"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:layout_marginBottom="16dp" />
+
+
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Create Account"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

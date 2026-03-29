@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/back"
+        android:contentDescription="@string/back"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Success Icon -->
+    <ImageView
+        android:id="@+id/successIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/reset"
+        android:contentDescription="@string/reset_success_illustration" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_successful_title"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_successful_subtitle"
+        android:textSize="15sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Login Now Button -->
+    <Button
+        android:id="@+id/loginNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/login_now_arrow"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#F8ACAC" />
+</LinearLayout>
