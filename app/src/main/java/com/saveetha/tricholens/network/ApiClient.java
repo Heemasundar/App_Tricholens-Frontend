@@ -13,7 +13,7 @@ public class ApiClient {
 
     // CHANGE THIS FOR YOUR DEVICE/NETWORK:
     // Your current machine IP (from ipconfig) is 10.195.39.216. Port is 5000.
-    private static final String BASE_URL = "http://10.211.142.216:5000/"; // Final Redirection to Local
+    private static final String BASE_URL = "http://180.235.121.253:8118/"; // Hosted Production Server
 
     private static Retrofit retrofit = null;
 
